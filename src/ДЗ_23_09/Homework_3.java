@@ -1,3 +1,5 @@
+package ДЗ_23_09;
+
 import java.util.Scanner;
 
 public class Homework_3 {
