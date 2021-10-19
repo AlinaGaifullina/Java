@@ -1,5 +1,7 @@
 package ДЗ_21_10;
 
+import java.util.Scanner;
+
 public class Garden {
     public static void main(String[] args) {
         Plant Apple = new Plant("Apple Tree", 20, true, 0);
@@ -12,7 +14,12 @@ public class Garden {
         Peach.statistics();
 
         Water water = new Water();
-        water.fill(92);
+
+        System.out.println("How much water to add?");
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        water.fill(number);
 
         water.TryToWater(Apple);
         water.TryToWater(Pear);
