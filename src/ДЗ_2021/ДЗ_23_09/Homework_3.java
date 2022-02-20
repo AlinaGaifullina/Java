@@ -1,4 +1,4 @@
-package ДЗ_23_09;
+package ДЗ_2021.ДЗ_23_09;
 
 import java.util.Scanner;
 

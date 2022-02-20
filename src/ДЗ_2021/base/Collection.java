@@ -1,4 +1,4 @@
-package ДЗ_03_11.base;
+package ДЗ_2021.base;
 
 public interface Collection {
         int size();

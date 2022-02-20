@@ -1,6 +1,6 @@
-package ДЗ_03_11.impl;
+package ДЗ_2021.impl;
 
-import ДЗ_03_11.base.MyList;
+import ДЗ_2021.base.MyList;
 
 public class MyListImpl implements MyList {
     private final String[] elements = new String[100];

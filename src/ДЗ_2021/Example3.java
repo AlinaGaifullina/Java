@@ -1,7 +1,7 @@
-package ДЗ_03_11;
+package ДЗ_2021;
 
-import ДЗ_03_11.base.MyList;
-import ДЗ_03_11.impl.MyListImpl;
+import ДЗ_2021.base.MyList;
+import ДЗ_2021.impl.MyListImpl;
 
 public class Example3 {
     public static void main(String[] args) {

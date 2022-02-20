@@ -1,4 +1,4 @@
-package ДЗ_21_10;
+package ДЗ_2021.ДЗ_21_10;
 
 public class Water {
     int waterCount;
