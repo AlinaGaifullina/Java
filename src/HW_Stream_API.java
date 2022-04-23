@@ -8,9 +8,10 @@ public class HW_Stream_API {
     @Test
     void checkTask1() {
         List<Integer> list = Arrays.asList(1, 2, 3, 4);
-        list = list.stream().map(x -> x*2).toList();
 
         // TODO: Применить умножение каждого элемента на 2
+        
+        list = list.stream().map(x -> x*2).toList();
 
         Assertions.assertEquals(2, list.get(0));
         Assertions.assertEquals(4, list.get(1));
@@ -23,7 +24,9 @@ public class HW_Stream_API {
         List<Integer> list = Arrays.asList(1, 2, 3, 4);
 
         // TODO: Отфильтровать элементы, оставив только четные
+        
         list = list.stream().filter(s -> s%2 == 0).toList();
+        
         Assertions.assertEquals(2, list.size());
         Assertions.assertEquals(2, list.get(0));
         Assertions.assertEquals(4, list.get(1));
@@ -34,7 +37,9 @@ public class HW_Stream_API {
         List<String> list = Arrays.asList("Ivanov", "Sidorov", "Antonov", "Kuznecov", "Kulikov", "Ahmetov");
 
         // TODO: Отсортировать по алфавиту
+        
         list = list.stream().sorted().toList();
+        
         Assertions.assertEquals("Antonov", list.get(1));
         Assertions.assertEquals("Ivanov", list.get(2));
         Assertions.assertEquals("Kuznecov", list.get(4));
@@ -52,7 +57,9 @@ public class HW_Stream_API {
         );
 
         // TODO: Отсортировать по score и по алфавиту, выбрать только тех, у кого score больше или равно 56
+        
         list = list.stream().filter(s -> s.getScore() >= 56).sorted(Comparator.comparing(Student::getLastName).reversed()).sorted(Comparator.comparing(Student::getScore).reversed()).toList();
+        
         Assertions.assertEquals("Kuznecov", list.get(0).getLastName());
         Assertions.assertEquals("Antonov", list.get(1).getLastName());
         Assertions.assertEquals(60, list.get(2).getScore());
